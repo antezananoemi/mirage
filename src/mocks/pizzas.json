@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Napolitana",
+    "image": "https://image.shutterstock.com/z/stock-photo-traditional-neapolitan-pizza-1051494194.jpg",
+    "description": "Also known as Naples-style pizza, is a style of pizza made with tomatoes and mozzarella cheese.",
+    "toppings": ["mozzarella", "tomato", "garlic"]
+  },
+  {
+    "id": 2,
+    "name": "Greek Pizza",
+    "image": "https://image.shutterstock.com/z/stock-photo-tasty-greek-pizza-on-a-thin-pastry-base-sliced-and-served-with-a-spatula-on-a-wooden-board-with-a-1025330092.jpg",
+    "description": "A style of pizza crust and preparation where the pizza is proofed and cooked in a metal pan rather stretched to order and baked on the floor of the pizza oven.",
+    "toppings": ["feta", "olives", "roasted peppers"]
+  },
+  {
+    "id": 3,
+    "name": "Stromboli",
+    "image": "https://image.shutterstock.com/z/stock-photo-italian-sausage-and-mozzarella-cheese-stromboli-with-sauce-on-the-side-88553125.jpg",
+    "description": "A type of turnover filled with various Italian cheeses and cold cuts or vegetables.",
+    "toppings": ["mozzarella", "salami", "tomato sauce"]
+  }
+]

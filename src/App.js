@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink
+} from "react-router-dom";
+import Users from "./components/Users";
+import Pizzas from "./components/Pizzas";
+import Companies from "./components/Companies";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Router>
+        <header className="navbar">
+          <section className="navbar-section">
+            <NavLink to="/" className="btn btn-link">
+              Users
+            </NavLink>
+            <NavLink to="/companies" className="btn btn-link">
+              Companies
+            </NavLink>
+            <NavLink to="/pizzas" className="btn btn-link">
+              Pizzas
+            </NavLink>
+          </section>
+        </header>
+        <div className="columns">
+          <div className="column col-xs-6">
+            <Switch>
+              <Route exact path="/">
+                <Users />
+              </Route>
+              <Route path="/companies">
+                <Companies />
+              </Route>
+              <Route path="/pizzas">
+                <Pizzas />
+              </Route>
+            </Switch>
+          </div>
+        </div>
+      </Router>
     </div>
   );
 }
-
-export default App;
